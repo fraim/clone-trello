@@ -1,0 +1,39 @@
+.boards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.boards li {
+    width: 155px;
+    min-height: 90px;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.boards li a {
+    position: relative;
+    background: #026aa7;    
+    min-height: 75%;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 3px;
+    display: block;
+    z-index: 3;
+    word-wrap: break-word;
+}
+.boards li a:hover {
+    background: rgb(0, 121, 191);
+}
+.boards li button {
+    position: absolute;    
+    top: 0;
+    transform: translate(10px, 10px);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+.boards li:hover button {
+    transform: translate(15px, -22px);;
+    z-index: 2;
+}

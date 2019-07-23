@@ -1,0 +1,162 @@
+.checkouts {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+}
+.checkouts li {
+    list-style: none;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(9,30,66,.25);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+.checkouts li .cart {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.checkouts li .cart i {
+    display: block;
+    color: #172b4d;
+    margin: 10px 0;
+}
+.checkouts li .cart .title {
+    font-size: 14px;
+    color: #172b4d;
+    word-break: break-word;
+}
+.popup__checkout {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+.popup__checkout.hide {
+    display: none;
+}
+.popup__checkout__container {
+    background: #f4f5f7;
+    width: 500px;
+    min-height: 450px;
+    margin: 0 auto;
+    animation: activePopup 0.5s ease-in-out forwards;
+    position: relative;
+    border-radius: 3px;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+@keyframes activePopup {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+.popup__checkout__container > .close {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, .5);
+}
+.popup__checkout__container > .close:hover,
+.popup__checkout__container > .close:active {
+    color: #172b4d;
+}
+.popup__checkout__container > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.popup__checkout__container > div > i {
+    font-size: 32px;
+    margin-right: 20px;
+    color: #172b4d;
+}
+.popup__checkout__container > div span {
+    font-size: 20px;
+    color: #172b4d;
+    font-weight: 600;
+}
+.popup__checkout__container > div .title {
+    font-size: 20px;
+    color: #172b4d;
+    font-weight: 600;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: inherit;
+    resize: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: -10px;
+    overflow: hidden;
+}
+.popup__checkout__container > div .title:focus,
+.popup__checkout__container > div .title:active {
+    background: #fff;
+    border: none;
+    box-shadow: inset 0 0 0 2px #0079bf;
+}
+.popup__checkout__container > div .change {
+    padding: 7px;
+    background: rgba(0, 0, 0, .05);
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.popup__checkout__container > div .change:hover {
+    background: rgba(0, 0, 0, .1);
+}
+.description__change textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+.description__change__textarea.hide {
+    display: none;
+}
+.description__change textarea:focus {
+    box-shadow: inset 0 0 0 2px #0079bf;
+}
+.description {
+    margin-bottom: 30px !important;
+}
+.description__change__textarea {
+    width: 100%;
+}
+.description__change__textarea__text {
+    display: block;
+}
+.description__change__textarea .close {
+    margin-left: 20px;
+    height: 30px;
+}
+.description__change p {
+    cursor: pointer;
+    color: #172b4d;
+    width: 100%;
+}
+.delete {
+    position: absolute;    
+    bottom: 25px;
+    right: 25px;
+    color: rgba(0, 0, 0, .5);
+    font-size: 24px;
+}
+.delete:focus,
+.delete:hover,
+.delete:active {
+    color: #172b4d;
+}

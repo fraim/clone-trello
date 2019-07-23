@@ -1,0 +1,140 @@
+button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.board {
+    width: 100%;
+    height: 100vh;
+    background: #0385d1;
+    padding-top: 20px;
+    transition: 0.5s ease-in-out;
+}
+.board__container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.board__title {
+    margin-bottom: 30px;
+}
+.board__name {
+    display: inline-block;
+    color: #fff;
+    padding: 0px 10px;
+    margin-left: -10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.board__name.hide {
+    display: none;
+}
+.board__name:hover {
+    background: rgba(0, 0, 0, .3);
+}
+.open-description {
+    margin-left: 5px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.open-description.active {
+    transform: rotate(45deg);
+}
+.board__description {
+    color: #fff;
+    font-size: 20px;
+}
+.board__description.hide {
+    display: none;
+}
+.board__description.active {
+    display: block;
+    animation: openDescription 0.3s ease-in-out;
+}
+@keyframes openDescription {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.create-column {
+    display: flex;
+    color: #fff;
+    background: rgba(129, 204, 248, 0.5);
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+    max-width: 200px;
+    width: 100%;
+}
+.create-column:hover {
+    background: #024b75;
+}
+.create-column i {
+    margin-right: 10px;
+}
+.create-column.hide {
+    display: none;
+}
+.create__list {
+    display: none;
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;
+    background-color: #dfe1e6;
+    border-radius: 2px;
+}
+.create__list.active {
+    display: block;
+}
+.create__list input {
+    width: 93%;
+    border: 2px solid #026aa7;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.create__list__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add {
+    display: inline-block;
+    margin-top: 8px;
+    background: #5aac44;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+.close {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    margin-top: 8px;
+}
+.board__columns {
+    display: flex;
+    align-items: flex-start;
+}
+.input__name {
+    height: 30px;
+    width: 140px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.input__name.hide {
+    display: none;
+}
